@@ -3,7 +3,7 @@ import { ButtonStyle } from './ButtonStyle';
 
 const Button = ({ type, title, bgColor }) => {
   return (
-    <ButtonStyle className={type} id="basic-addon2" bgColor={bgColor}>
+    <ButtonStyle className={type} id="basic-addon2" $bgcolor={bgColor}>
       {title}
     </ButtonStyle>
   );

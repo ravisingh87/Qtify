@@ -1,6 +1,6 @@
 import React from 'react';
 import Logo from '../Logo/Logo';
-// import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { ButtonStyle, InputStyle, NavbarStyle } from './NavbarStyle.js';
 import Button from '../Button/Button.jsx';
 const Navbar = () => {
@@ -8,9 +8,9 @@ const Navbar = () => {
     <NavbarStyle className="navbar bg-color-primary">
       <div className="container-fluid row">
         <div className="col">
-          {/* <Link to="/"> */}
-          <Logo />
-          {/* </Link> */}
+          <Link to="/">
+            <Logo />
+          </Link>
         </div>
         <div className="container col d-flex">
           <div className="input-group">
