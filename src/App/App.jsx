@@ -5,13 +5,14 @@ import { theme } from '../theme';
 import { GlobalStyle } from './AppStyle';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Home from '../components/Home/Home';
+import Hero from '../components/Hero/Hero';
 const App = () => {
   return (
     <BrowserRouter>
       <ThemeProvider theme={theme}>
         <GlobalStyle />
         <Navbar />
-        {/* <Hero /> */}
+        <Hero />
         <Routes>
           <Route exact path="/" element={<Home />} />
         </Routes>
