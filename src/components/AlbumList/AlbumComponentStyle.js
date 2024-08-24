@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const AlbumComDivContainer = styled.div`
   color: ${(props) => props.theme.color.white};
-  height: 40vh;
+  height: ${(props) => (!props.$show ? '70vh' : '40vh')};
 `;
 
 export const AlbumComDiv = styled.div``;

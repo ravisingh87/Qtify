@@ -39,9 +39,9 @@ export const settings = {
 
 const AlbumComponent = ({ data, title }) => {
   const [showAll, setShowAll] = useState(true);
-
+  console.log('show', showAll);
   return (
-    <AlbumComDivContainer>
+    <AlbumComDivContainer $show={showAll}>
       <AlbumComDiv className="d-flex justify-content-between">
         <h6>{title}</h6>
         <AlbumSpan onClick={() => setShowAll(!showAll)}>
